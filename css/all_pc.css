@@ -1,0 +1,326 @@
+body{
+	background-image:url(../img/bg1.jpg);
+	border-radius: 15px;
+}
+section{
+	background: #1C5BE4;
+	padding: 2px 20px;
+	border-radius: 15px 15px 0px 0px;
+	width: 94%;
+	margin: auto;
+	border:2px solid pink;
+	line-height: 75px;
+}
+section h1{
+	color: white;
+	font-size: 30;
+	display: inline;
+	
+}
+section h1:hover{
+	background-color: green;
+}
+section img{
+	float: right;
+	padding: 25px 5px;
+	}
+	section p{
+		flot right;
+	}
+section img:hover {
+  color: red;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  transition: 0.5s ease;
+}
+#pagebody{
+	width:920px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px;
+	background-color: #2573BE;
+	border-radius: 10px;
+	transition-property: 10px;
+}
+
+header{
+	width:880px;
+	height:auto;
+	margin:10px;
+	padding:5px;
+	border:2px solid pink;
+	background-color: #3A8895;
+	border-radius: 10px;
+}
+
+
+.topnav{
+	width:100%;
+	height:50px;
+	margin: auto;
+	border:2px solid pink;
+	background-color: green;
+	border-radius: 10px;
+}
+
+.topnavde{
+	display: inline-block;
+	width:70px;
+	height:18px;
+	margin:10px;
+	padding:5px;
+	border-radius: 15px 0px;
+	border:2px solid pink;
+	background-color: lightcyan;
+	text-align: center;
+}
+
+.topnavde a:hover{
+	width:90px;
+	height: 22px;
+	background-color:lightpink;
+}
+
+p{
+	text-align: left;
+}
+
+.container{
+	width:880px;
+	height:auto;
+	margin:10px;
+	padding:5px;
+	border:2px solid pink;
+	background-color:#133558;
+	color: white;
+	text-align: center;
+	}
+
+aside{
+	width:200px;
+	height:auto;
+	margin:10px;
+	padding:10px;
+	border:2px solid pink;
+	background-color: #CFC;
+	float:left;
+}
+
+A{text-decoration:none;}
+
+
+
+article{
+	width:580px;
+	height:auto;
+	margin:10px;
+	padding:10px;
+	border:2px solid pink;
+	background-color: #CFC;
+	float:right;
+}
+
+.readmore{
+	display: block;
+}
+
+
+footer{
+	width:880px;
+	height:auto;
+	padding: 10px;
+	margin:auto;
+	border:2px solid pink;
+	background-color: #0D4E92;
+	border-radius: 0px 0px 10px 10px;
+	color: white;
+	clear: both;
+	text-align: center;
+	}
+
+#submenu{
+	width:200px;
+	height:auto;
+	margin:10px;
+	padding:10px;
+	border:2px solid pink;
+	float:left;
+	background-color:lightgreen;	
+}
+
+A{text-decoration:none;}
+
+#content{
+	width:580px;
+	height:auto;
+	margin:10px;
+	padding:10px;
+	border:2px solid pink;
+	float:right;
+	background-color:#8996C3;	
+}
+
+#bigphoto{
+		float: right;
+
+		}
+#submenu2{
+		float: left;
+		clear: both;
+			}
+table img{
+				height: 97px;
+				width: 120px;
+				border-radius: 10px;
+			}
+button{
+	height: 35px;
+	width: auto;
+	background-color: blue;
+	color: white;
+	border-radius: 10px;
+	cursor: pointer;
+
+}
+
+.submenu{
+		width:20%;
+		height: auto;
+		margin:10px;
+		padding:10px;
+		border:2px solid pink;
+		float:left;
+		border-radius: 15px 0px 15px 0px;
+		border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+}
+a{text-decoration:none;}
+
+	.submenu_header{
+		width:180px;
+		height:30px;
+		margin:10px;
+		padding:10px;
+		border:2px solid pink;
+		float:left;
+	}
+
+	.submenubody{
+		width:120px;
+		height:15px;
+		margin:10px;
+		padding:10px;
+		border:2px solid pink;
+		background-image:url('img/nav2.jpg');
+		float:left;
+		border-radius: 15px 0px 15px 0px;
+		 display: block;
+
+	}
+	.submenubody a{
+				 color: white;
+	}
+	
+	.submenu a:hover:not(.active) {
+		  background-color: white;
+		  color: black;
+
+		}
+	.active {
+		  background-color: #AE878C;
+		}
+.submenu2{
+		float: right;
+		width: 75%;
+		text-align: left;
+}
+
+.in2{
+	float: left;
+	height: 200px;
+	width: 210px;
+	border-radius: 5px;
+	border:1px solid white;
+}
+.in3{
+	float: right;
+	color: white;
+	font-size: 25px;
+	margin-right: 10px;
+	margin-top: 20px;
+	height: 100px;
+	width: 400px;
+	text-align: center;
+}
+.in3 span{
+	background-color: #333333; 
+	display:inline;
+}
+.in4{
+	clear: both;
+}
+.in4 span a{
+	color: #42ecf5;
+}
+.in4{
+	color: white;
+	font-size: 17px;
+	text-align: left;
+	padding: 10px;
+}
+
+/* Contact page styling*/
+.contact h1{
+  text-align: left;
+  padding: 5px 15px;
+}
+.contact h2{
+  padding: 5px 15px;
+  text-align: left;
+}
+.contact p{
+  padding: 5px 25px;
+}
+fieldset{
+  padding: 10px;
+  font-weight: bold;
+  background-color: #c7d9c9;
+}
+legend{
+  font-size: 20px;
+  text-align: left;
+  color: white;
+  text-shadow: 2px 4px black;
+}
+label{
+	color: black;
+	text-align: left;
+}
+.input{
+  padding: 5px;
+  width: 90%;
+  border-radius: 5px;
+}
+.sub{
+  padding: 7px;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+}
+.text11{
+  padding: 5px;
+  width: 90%;
+  height: 100px;
+  border-radius: 5px;
+}
+.field{
+  padding: 5px 15px;
+}
+.footer11{
+  padding: 10px;
+  color: white;
+  width: 100%;
+  display: flex;
+}
+

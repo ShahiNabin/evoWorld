@@ -1,0 +1,170 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" media="(min-width: 640px)" href="css/all_pc.css">
+<link rel="stylesheet" media="(max-width: 640px)" href="css/all_smp.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<link href="css/flexslider.css" rel="stylesheet">
+<script src="jquery.flexslider-min.js"></script>
+<script>
+  $(function(){
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+  });
+</script>
+<style type="text/css">
+	.night{
+        height: 70vh;
+        width: 60vw;
+        margin: 5rem auto;
+        background: url('img/Img_1.png');
+        background-size: cover;
+        position: relative;
+        box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+        overflow-x: hidden;
+        border-radius: 15px 15px 0px 0px;
+    }
+     
+    .surface{
+        height: 80vh;
+        width: 500%;
+        background: url('img/Img_2.jpg');
+        display: block;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        background-repeat: repeat-x;
+    }
+     
+    .car{
+        position: absolute;
+        bottom: 8%;
+        left: 20%;
+    }
+     
+    /* Animation */
+     
+    @keyframes moveRight{
+        100%{transform: translateX(-2950px)}
+    }
+     
+    @keyframes suspension{
+        100%{
+            transform: translateY(-1px);
+        }
+        50%{
+            transform: translateY(2px);
+        }
+        0%{
+            transform: translateY(-1px);
+        }
+    }
+     
+    .moveRight{
+        animation: moveRight 6s linear infinite;
+    }
+     
+    .suspension{
+        animation: suspension 1s linear infinite;
+    }
+    p{
+    	padding: 0px 20px;
+    }
+</style>
+
+<script type="text/javascript">
+        $(document).ready(function () {
+ 
+        // variables
+        $surface = $('.surface');
+        $car = $('.car');
+        $img = $('.car img');
+        let flag = true;
+     
+        const cars = ['img/Img_05.png', 'img/Img_06.png'];
+     
+     
+        // keypress event
+        $(document).on('keypress', function (e) {
+            if (e.which == 13) {
+                $($surface).toggleClass('moveRight');
+                $($car).toggleClass('suspension');
+            }
+        })
+     
+        // lights
+        $(document).on('keypress', function (e) {
+            if (e.which == 32) {
+                if (flag) {
+                    flag = false;
+                    $img.attr('src', cars[0]);
+                } else {
+                    flag = true;
+                    $img.attr('src', cars[1]);
+                }
+            }
+        })
+     
+     
+    });
+    </script>
+</head>
+
+<body>
+<div id="pagebody">
+	<section>
+		<a href="index.html"><h1>EvoWorld</h1></a>
+		<a href="https://www.facebook.com/EveBin"><img src="img/fb.png" height="20px" width="20px"></a>
+				<a href="https://www.instagram.com/"><img src="img/insta.jpg" height="20px" width="20px"></a>
+				<a href="https://twitter.com/"><img src="img/twitter.jpeg" height="20px" width="20px"></a>
+				<a href="https://www.google.com/"><img src="img/g.jpg" height="20px" width="20px"></a>
+				<a href="https://github.com/ShahiNabin"><img src="img/github.jpg" height="20px" width="20px"></a>
+	</section>
+	<header>
+	<div class="flexslider" style="border-color:#CFC;;">
+      <ul class="slides">
+        <li><img src="img/1.jpg" /></li>
+        <li><img src="img/2.jpg" /></li>
+        <li><img src="img/3.jpg" /></li>
+        <li><img src="img/4.jpg" /></li>
+        <li><img src="img/5.jpg" /></li>
+        <li><img src="img/6.jpg" /></li>
+        <li><img src="img/7.jpg" /></li>
+        <li><img src="img/8.jpg" /></li>
+      </ul>
+    </div>
+
+    <div class="topnav">
+    	<div class="topnavde"><a href="index.html"><b>Home</b></a></div>
+			<div class="topnavde"><a href="score.html"><b>Score</b></a></div>
+			<div class="topnavde"><a href="shop.html"><b>Shop</b></a></div>
+			<div class="topnavde"><a href="js.html"><b>JS World</b></a></div>
+			<div class="topnavde"><a href="form.html"><b>Form</b></a></div>
+			<div class="topnavde"><a href="map.html"><b>Map</b></a></div>
+			<div class="topnavde"><a href="anima.html"><b>Anima</b></a></div>
+			<div class="topnavde"><a href="about.html"><b>About Us</b></a></div>
+    </div>
+    
+	</header>
+
+	<div class="container">
+		<h2>Moving Car Animation</h2>
+		<p>Please press <b>Enter</b> to start.</p>
+		<p>Space to Turn On Light</p>
+		<div class="night">
+        <div class="surface"></div>
+        <div class="car">
+            <img src="img/Img_06.png" alt="" height="150px" width="auto">
+        </div>
+    </div>
+		
+	</div>
+	
+	<footer>Copyright (C) 2018s copyrights. KCGI.All Rights Reserved.</footer>
+
+</div>
+</body>
+</html>
